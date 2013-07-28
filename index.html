@@ -27,7 +27,6 @@
                 <img class="navbar-brand" src="http://clipartist.net/RSS/openclipart.org/2012/June/new_ping_penguin_bird-31px.png" />
                 <a class="navbar-brand" href="#home">PenguinGifts</a>
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#personalise">Personalise</a></li>
                     <li><a href="#prices">Information</a></li>
@@ -129,7 +128,7 @@
         <script type="text/javascript">
             $(".nav > li").click(function (event) {
                 $(".nav > li").removeClass("active");
-                $(event.currentTarget).removeClass("");
+                $(event.currentTarget).addClass("active");
             });
         </script>
     </body>
