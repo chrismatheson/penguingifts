@@ -1,9 +1,18 @@
 /*global angular*/
 angular.module("builder", [])
 
-    .controller("gridController", ["$scope", function ($scope) {
+    .controller("gridController", ["$scope", "LettersModel", function ($scope, LettersModel) {
         "use strict";
-        $scope.letters = [
+        $scope.letters = LettersModel.letters;
+    }])
+    .controller("actions", ["$scope", "LettersModel", function ($scope, LettersModel) {
+        "use strict";
+        $scope.reset = LettersModel.reset();
+    }])
+    .service("LettersModel", [function () {
+        "use strict";
+        var instance = {};
+        instance.letters = [
             ["", "", "", "", "", "", "", "", "", ""],
             ["", "", "", "", "f", "", "", "", "", ""],
             ["", "", "", "", "a", "", "", "", "", ""],
@@ -13,6 +22,21 @@ angular.module("builder", [])
             ["d", "a", "d", "d", "y", "", "", "", "", ""],
             ["", "", "", "", "", "", "", "", "", ""]
         ];
+        
+        instance.reset = function () {
+            this.letters = [
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""],
+                ["", "", "", "", "", "", "", "", "", ""]
+            ];
+        };
+        
+        return instance;
     }])
     .controller("letterController", ["$scope", function ($scope) {
         "use strict";
