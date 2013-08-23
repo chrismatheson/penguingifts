@@ -4,17 +4,18 @@
     <head>
         <meta charset='utf-8' />
         <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="description" content="Penguin Gifts" />
         <!-- Latest compiled and minified CSS -->
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Londrina+Shadow|Englebert' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link href='http://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet/less" type="text/css" href="stylesheets/styles.less" />
         
         <!--JS Includes-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <script type="text/javascript">
             less = {
                 env: "development"
@@ -24,9 +25,9 @@
         <title>PenguinGifts : Home</title>
     </head>
     
-    <body class="container">
+    <body class="container" data-spy="scroll" data-target="#navbar-penguin">
         <div class="container-fluid">
-            <div class="navbar navbar-fixed-top">
+            <div id="navbar-penguin" class="navbar navbar-default navbar-fixed-top">
                 <img class="navbar-brand" src="http://clipartist.net/RSS/openclipart.org/2012/June/new_ping_penguin_bird-31px.png" />
                 <a class="navbar-brand" href="#home">PenguinGifts</a>
                 <ul class="nav navbar-nav">
@@ -38,14 +39,10 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div id="construction" class="row">
-                <h2>This is a new site and is currently still under construction. Please check back regularly for updates.</h2>
-                <p>Contact <a href="mailto://emma_sutton2005@hotmail.co.uk">emma_sutton2005@hotmail.co.uk</a> for more information on anything seen here.</p>
-            </div>
-            <div id="home" class="row">
-                <h1>Retro Scrabble Art</h1>
+            <section id="home" class="row">
+                <h1 class="text-center">Retro Scrabble Art</h1>
                 <p>Great gift ideas for special occasions; wedding day, anniversaries, graduation, christening, naming day, new home/house warming, valentines, fathers/mothers day and many more!</p>
-                <div class="col-offset-2 col-8 well well-large">
+                <div class="col-sm-offset-2 col-xs-8 well well-large">
                     <!-- MAIN CONTENT -->
                     <div id="productsCarousel" class="carousel slide" data-interval="5000">
                         <ol class="carousel-indicators">
@@ -70,99 +67,143 @@
                         <a class="carousel-control right" href="#productsCarousel" data-slide="next">&rsaquo;</a>
                     </div>
                 </div>
-            </div>
+            </section>
             <hr>
-            <div id="porfolio" class="row">
-                <h1>Porfolio</h1>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/love-zoom.jpg">
+            <section id="portfolio">
+                <div class="row">
+                    <h1 class="text-center">Portfolio</h1>
+                    <p>Take a look at some of my recent designs, here you can browse small medium and large frames and get an idea for what themes and colors I can make.</p>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/love-zoom.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/mummy-daddy-adore-joseph-zoom.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive"src="images/mummy-daddy-family-love-eva-zoom.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/happy-anniversiry-zoom.jpg">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/mummy-daddy-adore-joseph-zoom.jpg">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/love-on-your-wedding-day.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/dada-mama-raife-zoom.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/very-special-nan-zoom.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/dream-zoom.jpg">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive"src="images/mummy-daddy-family-love-eva-zoom.jpg">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/toms-room-zoom.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/live-laugh-love-black.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/mummy-daddy-family-love-ava-theo.jpg">
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <img class="img-thumbnail img-responsive" src="images/love2.jpg">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/happy-anniversiry-zoom.jpg">
-                </div>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/love-on-your-wedding-day.jpg">
-                </div>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/dada-mama-raife-zoom.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/very-special-nan-zoom.jpg">
-                </div>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/dream-zoom.jpg">
-                </div>
-                <div class="col-4">
-                    <img class="img-thumbnail img-responsive" src="images/toms-room-zoom.jpg">
-                </div>
-            </div>
+            </section>
             <hr>
-            <div id="personalise" class="row">
-                <h1>Personalising</h1>
+            <section id="personalise" class="row">
+                <h1 class="text-center">Personalising</h1>
                 <p>Designs can be custom made to you requirements - 
 (Try using our design application) or you can get inspiration from some of our popular standard frames and our recently sold items.</p>
                 <p>All our frames are handmade to order, so please remember that it could take a little time to get your order just right.</p>
                 <p>Please also be aware that however hard we try, some words just don't link together! We can use some of our 'linking words' to try and create your piece, but unfortunately sometimes it just can't be done to fit in the frame :( </p>
                 <p>Please e-mail me if you have some specific idea's of things you'd like, and I will endeavour to build your request.</p>
                 <p>We have a range of decorations and backgrounds to be added to the frame if required, from pink teddy bears to champagne glasses!</p>
-                <br>
+            </section>
+            <hr>
+            <section id="build" class="row">
+                <h1 class="text-center">Build your design</h1>
                 <div class="row">
-                    <div class="thumbnail col-6">
+                    <div class="thumbnail col-sm-6 col-nd-6">
                         <h2>Small Frame</h2>
                         <img class="img-thumbnail img-responsive" src="images/love-zoom.jpg">
                         <div class="caption">
-                            <p>Emaple description</p>
-                            <p><a href="#" class="btn btn-primary">Get Yours</a> <a href="#" class="btn btn-default">Personalise</a></p>
+                            <p class="price">£10.00</p>
+                            <p>Best for one word designs, no longer than 5 or 6 letters, however it can be used for a short word down and one across.</p>
                         </div>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="SLDL9FBPPUYZN">
+                            <dl>
+                                <dt><input type="hidden" name="on1" value="Frames">Frames</dt>
+                                <dd>
+                                    <select name="os1">
+                                        <option value="Love">Love </option>
+                                        <option value="Hope">Hope </option>
+                                        <option value="Dream">Dream </option>
+                                        <option value="-- Personalised --">-- Personalised -- </option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <input type="hidden" name="on0" value="Postage Options">Total including P+P
+                                </dt>
+                                <dd>
+                                    <select name="os0">
+                                        <option value="First Class">First Class £13.50 GBP</option>
+                                        <option value="Second Class">Second Class £13.00 GBP</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <input type="hidden" name="on2" value="Personalisation">Personalisation
+                                </dt>
+                                <dd>
+                                    <input type="text" name="os2" maxlength="200">
+                                </dd>
+                            </dl>
+                            <input type="hidden" name="currency_code" value="GBP">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
                     </div>
-                    <div class="thumbnail col-6">
+                    <div class="thumbnail col-sm-6 col-nd-6">
                         <h2>Medium Frame</h2>
                         <img class="img-thumbnail img-responsive" src="images/love-zoom.jpg">
                         <div class="caption">
-                            <p>Emaple description</p>
-                            <p><a href="#" class="btn btn-primary">Buy</a> <a href="#" class="btn btn-default">Personalise</a></p>
+                            <p class="price">£12.50</p>
+                            <p>Best for a few short words linked together, no more than 7 letters across and 4/5 down</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="thumbnail col-6">
+                    <div class="thumbnail col-sm-6 col-nd-6">
                         <h2>Large Frame</h2>
                         <img class="img-thumbnail img-responsive" src="images/love-zoom.jpg">
                         <div class="caption">
-                            <p>Emaple description</p>
-                            <p><a href="#" class="btn btn-primary">Order</a></p>
+                            <p class="price">£20.00</p>
+                            <p>Ideal for customising. They can accommodate several names or words both up and down with linking words</p>
                         </div>
                     </div>
-                    <div class="thumbnail col-6">
+                    <div class="thumbnail col-sm-6 col-nd-6">
                         <h2>Long Frame</h2>
                         <img class="img-thumbnail img-responsive" src="images/love-zoom.jpg">
                         <div class="caption">
-                            <p>Emaple description</p>
-                            <p><a href="#" class="btn btn-primary">Buy</a></p>
+                            <p class="price">£20.00</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <hr>
-            <div id="info" class="row">
-                <h1>Information</h1>
-                <p><b>Small Frames</b> - these are best for one word designs, no longer than 5 or 6 letters, however it can be used for a short word down and one across.</p>
-                <p><b>Medium Frames</b> - this size is best for a few short words linked together, no more than 7 letters across and 4/5 down</p>
-                <p><b>Large Frames</b> - these are ideal for customising. They can accommodate several names or words both up and down with linking words.</p>
-            </div>
-            <hr>
-            <div id="prices" class="row">
-                <h1>Price & Costs breakdown</h1>
+            <section id="prices" class="row">
+                <h1 class="text-center">Price & Costs breakdown</h1>
                 <p>Items can be posted anywhere in mainland UK, please e-mail for information regarding postage to other area's.</p>
                 <h4>Postage and Packing</h4>
                 <ul>
@@ -177,7 +218,7 @@
                     <li>Large Frames - £20.00</li>
                 </ul>
                 <p>Please allow upto one week for construction of your personalised frame, and obviously the subsequent delivery option. If you need the item sooner, please e-mail me and I will try my best to complete as soon as possible.</p>
-            </div>
+            </section>
             <hr>
             <div id="footer_wrap" class="row outer">
                 <div class="col-12">
@@ -193,13 +234,6 @@
                 </div>
             </div>
         </div>
-        
-        <script type="text/javascript">
-            $(".nav > li").click(function (event) {
-                $(".nav > li").removeClass("active");
-                $(event.currentTarget).addClass("active");
-            });
-        </script>
     </body>
 
 </html>
