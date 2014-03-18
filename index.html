@@ -1,0 +1,13 @@
+---
+layout: default
+title: generated page
+---
+
+{% for post in site.posts %}
+<div class="4u">
+    <article class="box box-style2">
+        {{ content }}
+        <p>{{ post.title }}</p>
+    </article>
+</div>
+{% endfor %}
