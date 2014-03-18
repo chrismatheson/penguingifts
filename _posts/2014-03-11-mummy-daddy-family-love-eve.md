@@ -1,6 +1,7 @@
 ---
+layout: default
 title: Mummy Daddy Family Love Adore
 date:   2014-03-18 11:15:03
 ---
 
-![dada-mama-raife-zoom](images/mummy-daddy-family-love-eva-zoom.jpg)
+![dada-mama-raife-zoom]({{site.url}}/images/mummy-daddy-family-love-eva-zoom.jpg)
